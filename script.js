@@ -163,43 +163,6 @@ const moreCall = () => {
 
 //==================================//
 
-// ----------- POSTERS ----------- //
-
-const survivorsPoster =
-  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1691588265/SOundDesigner/affiches/les-survivants_c0zaxx.jpg";
-const nekfeuPoster =
-  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1691588265/SOundDesigner/affiches/les-etoiles-vagabondes_kglijp.jpg";
-const whalesPoster =
-  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1691588265/SOundDesigner/affiches/les-baleines-ne-savent-pas-nager_fyhmjd.jpg";
-const zoreyPoster =
-  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1691588265/SOundDesigner/affiches/zorey_dut5uq.jpg";
-const nightPoster =
-  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1691588264/SOundDesigner/affiches/la-grande-nuit_fg2imd.png";
-const soulmatesPoster =
-  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1691588263/SOundDesigner/affiches/ames-soeurs_id1fev.jpg";
-const timingPoster =
-  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1691588263/SOundDesigner/affiches/timing_zjxzsx.jpg";
-const maronaPoster =
-  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1691588263/SOundDesigner/affiches/l-extraordinaire-voyage-de-marona_piprxk.jpg";
-const teddyPoster =
-  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1691588263/SOundDesigner/affiches/teddy_oql1x1.jpg";
-const brotherPoster =
-  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1691588263/SOundDesigner/affiches/mon-frere_imbhss.jpg";
-const sharkPoster =
-  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1691588263/SOundDesigner/affiches/l-annee-du-requin_f4fiya.jpg";
-const killWifePoster =
-  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1691588262/SOundDesigner/affiches/j-ai-tue-ma-femme_ao3yyh.png";
-const micPoster =
-  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1691588262/SOundDesigner/affiches/made-in-china_d5p6eg.jpg";
-const eatPoster =
-  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1691588262/SOundDesigner/affiches/mange_goeosy.jpg";
-const juniorsPoster =
-  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1691588262/SOundDesigner/affiches/juniors_xxdekt.jpg";
-
-//
-
-//==================================//
-
 // ----------- TRAILERS ----------- //
 
 // 0 - Variables
@@ -430,3 +393,33 @@ const novarosaTrailer = () => {
   });
 };
 novarosaTrailer();
+
+//
+
+//==================================//
+
+// ----------- POSTERS ----------- //
+
+const allPosters = [
+  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213023/SOundDesigner/affiches/la-grande-nuit_oqcsq9.png",
+  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213023/SOundDesigner/affiches/Affiche_Elias_vndhwk.jpg",
+  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213023/SOundDesigner/affiches/juniors_an5bu2.jpg",
+  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213023/SOundDesigner/affiches/les-etoiles-vagabondes_y1qbfp.jpg",
+  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213023/SOundDesigner/affiches/l-extraordinaire-voyage-de-marona_qkc2li.jpg",
+  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213022/SOundDesigner/affiches/made-in-china_yehpwp.jpg",
+  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213022/SOundDesigner/affiches/les-survivants_enbsmm.jpg",
+  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213022/SOundDesigner/affiches/zorey_bpdb30.jpg",
+  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213022/SOundDesigner/affiches/teddy_vukfwn.jpg",
+  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213378/SOundDesigner/affiches/les-baleines-ne-savent-pas-nager_ev5err.jpg",
+  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1691588263/SOundDesigner/affiches/ames-soeurs_id1fev.jpg",
+  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1691588263/SOundDesigner/affiches/timing_zjxzsx.jpg",
+  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1691588263/SOundDesigner/affiches/mon-frere_imbhss.jpg",
+  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1691588263/SOundDesigner/affiches/l-annee-du-requin_f4fiya.jpg",
+  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1691588262/SOundDesigner/affiches/mange_goeosy.jpg",
+  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213023/SOundDesigner/affiches/j-ai-tue-ma-femme_oxmoah.png",
+];
+
+const wallPosters = document.getElementById("wallContainer");
+wallPosters.innerHTML = allPosters
+  .map((poster) => `<img src = ${poster} style="max-width:200px">`)
+  .join("");

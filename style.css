@@ -99,11 +99,13 @@ header button {
 } */
 
 #introVideo {
-  position: absolute;
+  /* position: absolute;
   top: -28%;
-  margin: auto;
-  min-width: 100%;
+  margin: auto; */
+  /* min-width: 100%; */
   min-height: 100%;
+  object-fit: contain;
+  top: -28%;
 }
 
 .infos-left {
@@ -343,6 +345,7 @@ section ul {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: var(--smoothGold);
 }
 
 /* #work{
@@ -646,22 +649,27 @@ figcaption p {
 }
 
 .about {
-  height: 50vh;
+  height: 60vh;
   position: relative;
-  margin: 60px 0;
+  margin: 200px 0;
   background: url("https://res.cloudinary.com/dzq7b6tce/image/upload/v1689458278/Projet_SoundDesigner/OnceUponATime/Ann%C3%A9e%20du%20Requin/Image_18-06-2023_%C3%A0_17.39_nbbezq.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: -140px;
+  background-position-y: -20px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  border-top: 8px solid black;
+  border-bottom: 8px solid black;
 }
 
 #aboutText {
   width: 75%;
   position: absolute;
-  top: 15%;
+  left: 30px;
+  /* top: 15%; */
   font-weight: 500;
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-family: "Lato";
   color: rgba(255, 228, 196, 0.845);
   letter-spacing: 0.1em;
@@ -687,27 +695,6 @@ figcaption p {
   height: 50px;
 }
 
-.cinematographer {
-  width: 100%;
-  background: black;
-  font-family: "Six Caps";
-  letter-spacing: 0.1em;
-  font-size: 1.1em;
-  display: flex;
-  flex-direction: column;
-}
-
-.bg-director {
-  width: 100%;
-  position: relative;
-}
-
-.bg-director {
-  height: 5vh;
-  position: relative;
-  display: flex;
-}
-
 .about-director {
   width: 100%;
   font-size: 1.2em;
@@ -718,25 +705,99 @@ figcaption p {
   align-items: center;
 }
 
-.elias-container {
+.cinematographer {
   width: 100%;
-  position: relative;
-  margin-bottom: 40px;
+  background: black;
+  font-family: "Six Caps";
+  letter-spacing: 0.1em;
+  font-size: 1.1em;
+  display: flex;
+  flex-direction: column;
+  border-top: 5px solid black;
+  padding-top: 5px;
+  padding-bottom: 13px;
 }
 
-.infos-Elias {
+.cinema-container {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cinema-Title {
+  color: var(--smoothGold);
+  font-size: 2.6em;
+  letter-spacing: 0.2em;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid var(--smoothGold);
+}
+
+/* .infos-Elias {
   width: 100%;
   background: var(--givre);
-}
+} */
 
 #eliasText {
-  background: var(--smoothGold);
   font-family: "Lato";
   font-size: 0.8em;
 }
 
+.pic-Elias {
+  background-image: url(https://res.cloudinary.com/dnxl4odrm/image/upload/v1693153529/SOundDesigner/affiches/Affiche_Elias_wrgfe8.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.watch-Elias {
+  color: var(--smoothGold);
+  display: grid;
+  grid-template-rows: 35% 30% 35%;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.watch-infos {
+  font-size: 1.4em;
+  letter-spacing: 0.2em;
+}
+
+.watch-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#watchElias {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: rgb(154, 209, 227);
+  border: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  padding: 8px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+#watchElias:hover {
+  transform: scale(1.1);
+}
+
+#watchElias:active {
+  transform: scale(0.9);
+}
+
 .elias-picture {
+  position: relative;
   width: 100%;
+  bottom: -8px;
 }
 
 #allPictures {
@@ -749,43 +810,18 @@ figcaption p {
   width: 100%;
 }
 
-.elias-container a {
-  display: flex;
-  justify-content: center;
-  background: transparent;
-}
-
-#watchElias {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  background: var(--givre);
-  border: none;
-  font-size: 1.2;
-  font-weight: bold;
-  padding: 5px;
-  border-radius: 8px;
-  transition: 0.2s;
-}
-
-#watchElias:hover {
-  transform: scale(1.1);
-}
-
-#watchElias:active {
-  transform: scale(0.9);
-}
-
 #wallContainer {
-  height: 50vh;
-  background: rgba(219, 219, 92, 0.612);
+  min-height: 100vh;
+  background: black;
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  font-size: bold;
-  color: red;
-  margin: 500px 0;
+  margin: 200px 0;
+}
+
+#wallContainer img {
+  max-height: 256px;
 }
 
 #back {
