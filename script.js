@@ -401,13 +401,14 @@ novarosaTrailer();
 // ----------- POSTERS ----------- //
 
 const allPosters = [
-  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213023/SOundDesigner/affiches/la-grande-nuit_oqcsq9.png",
+  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693319233/SOundDesigner/affiches/mise-au-vert_sxzes7.jpg",
+  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213022/SOundDesigner/affiches/les-survivants_enbsmm.jpg",
   "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213023/SOundDesigner/affiches/Affiche_Elias_vndhwk.jpg",
   "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213023/SOundDesigner/affiches/juniors_an5bu2.jpg",
   "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213023/SOundDesigner/affiches/les-etoiles-vagabondes_y1qbfp.jpg",
   "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213023/SOundDesigner/affiches/l-extraordinaire-voyage-de-marona_qkc2li.jpg",
   "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213022/SOundDesigner/affiches/made-in-china_yehpwp.jpg",
-  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213022/SOundDesigner/affiches/les-survivants_enbsmm.jpg",
+  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213023/SOundDesigner/affiches/la-grande-nuit_oqcsq9.png",
   "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213022/SOundDesigner/affiches/zorey_bpdb30.jpg",
   "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213022/SOundDesigner/affiches/teddy_vukfwn.jpg",
   "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213378/SOundDesigner/affiches/les-baleines-ne-savent-pas-nager_ev5err.jpg",
