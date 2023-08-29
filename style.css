@@ -755,10 +755,16 @@ figcaption p {
 }
 
 .pic-Elias {
-  background-image: url(https://res.cloudinary.com/dnxl4odrm/image/upload/v1693153529/SOundDesigner/affiches/Affiche_Elias_wrgfe8.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pic-Elias img {
+  height: 380px;
+  /* background-image: url(https://res.cloudinary.com/dnxl4odrm/image/upload/v1693153529/SOundDesigner/affiches/Affiche_Elias_wrgfe8.jpg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: center; */
 }
 
 .watch-Elias {
