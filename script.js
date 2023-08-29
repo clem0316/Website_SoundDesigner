@@ -403,7 +403,7 @@ novarosaTrailer();
 const allPosters = [
   "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693319233/SOundDesigner/affiches/mise-au-vert_sxzes7.jpg",
   "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213022/SOundDesigner/affiches/les-survivants_enbsmm.jpg",
-  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213023/SOundDesigner/affiches/Affiche_Elias_vndhwk.jpg",
+  "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213023/SOundDesigner/affiches/Affiche_Elias_clean.jpg",
   "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213023/SOundDesigner/affiches/juniors_an5bu2.jpg",
   "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213023/SOundDesigner/affiches/les-etoiles-vagabondes_y1qbfp.jpg",
   "https://res.cloudinary.com/dnxl4odrm/image/upload/v1693213023/SOundDesigner/affiches/l-extraordinaire-voyage-de-marona_qkc2li.jpg",
