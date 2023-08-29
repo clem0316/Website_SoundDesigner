@@ -345,12 +345,17 @@ section ul {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: var(--smoothGold);
+  background: rgb(221, 236, 241);
+  background: linear-gradient(
+    90deg,
+    rgba(221, 236, 241, 0.52) 0%,
+    rgba(255, 228, 196, 0.72) 100%
+  );
 }
 
-/* #work{
-  max-height : 100vh
-} */
+#work {
+  margin-bottom: 100px;
+}
 
 #workContainer {
   position: relative;
@@ -651,7 +656,8 @@ figcaption p {
 .about {
   height: 60vh;
   position: relative;
-  margin: 200px 0;
+  margin-top: 80px;
+  margin-bottom: 170px;
   background: url("https://res.cloudinary.com/dzq7b6tce/image/upload/v1689458278/Projet_SoundDesigner/OnceUponATime/Ann%C3%A9e%20du%20Requin/Image_18-06-2023_%C3%A0_17.39_nbbezq.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -716,6 +722,8 @@ figcaption p {
   border-top: 5px solid black;
   padding-top: 5px;
   padding-bottom: 13px;
+  border-top: 2px solid rgba(208, 137, 15, 0.694);
+  border-bottom: 2px solid rgba(208, 137, 15, 0.735);
 }
 
 .cinema-container {
@@ -800,14 +808,31 @@ figcaption p {
   bottom: -8px;
 }
 
+.elias-picture img {
+  width: 100%;
+}
+
+.wall {
+  margin: 200px 0 50px 0;
+}
+
+.wallTitle {
+  min-height: 12vh;
+  text-align: center;
+  color: var(--smoothGold);
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Six Caps";
+  letter-spacing: 0.25em;
+  font-size: 2.2em;
+}
+
 #allPictures {
   width: 100%;
   display: flex;
   flex-direction: row;
-}
-
-.elias-picture img {
-  width: 100%;
 }
 
 #wallContainer {
@@ -817,17 +842,17 @@ figcaption p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 200px 0;
 }
 
 #wallContainer img {
   max-height: 256px;
 }
 
-#back {
-  position: absolute;
-  right: 10px;
-  transform: translateY(-15px);
+.back {
+  position: fixed;
+  right: 5%;
+  top: 90%;
+  z-index: 1000;
 }
 
 #back button {
@@ -835,8 +860,128 @@ figcaption p {
   width: 40px;
   border-radius: 250px;
   border: none;
+  background: rgb(186, 186, 237);
 }
 
 #back button:hover {
   background: red;
+}
+
+footer {
+  width: 100%;
+  height: 5vh;
+  background: black;
+  color: var(--smoothGold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  margin: 0 20px;
+}
+
+footer a {
+  margin: 0 20px;
+}
+
+.logos img {
+  max-height: 18px;
+}
+
+/* ****************** MEDIA QUERIES ******************* */
+
+@media screen and (max-width: 1005px) {
+  .welcomeVideo {
+    /* position: relative;
+    margin: auto;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    clip-path: 0 0; */
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #aboutText {
+    width: 90%;
+    padding: 10px;
+    font-size: 0.8em;
+  }
+  #nav1 {
+    padding: 0 10px;
+  }
+  nav li {
+    font-size: 0.8em;
+    margin: 20px;
+  }
+  #work {
+    margin-bottom: 70px;
+  }
+  .about {
+    margin-top: 70px;
+    margin-bottom: 120px;
+  }
+  .wall {
+    margin: 120px 0 50px 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .welcomeVideo {
+    height: 300px;
+  }
+  .infos-left {
+    top: 150px;
+  }
+  .infos-right {
+    top: 220px;
+    right: 60px;
+  }
+  .infos-left h1 {
+    font-size: 3.5em;
+  }
+  .cinema-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .pic-Elias {
+    min-height: 300px;
+    margin: 20px;
+  }
+  .watch-Elias {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: space-between;
+  }
+  #ulWorkAccess {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .welcomeVideo {
+    height: 230px;
+  }
+  .infos-left {
+    top: 115px;
+  }
+  .infos-right {
+    top: 160px;
+  }
+  .infos-left h1 {
+    font-size: 2.5em;
+  }
+  #work {
+    margin-bottom: 50px;
+  }
+  .about {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  .wall {
+    margin: 100px 0 50px 0;
+  }
 }

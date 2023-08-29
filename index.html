@@ -60,7 +60,7 @@
           <span id="afterWork"></span>
         </li>
         <li class="aboutAccess">
-          <a href="#aboutText"><button onclick="aboutCall()">ABOUT</button></a>
+          <a href="#goAbout"><button onclick="aboutCall()">ABOUT</button></a>
           <span id="afterAbout"></span>
         </li>
         <li class="cinemaAccess">
@@ -70,7 +70,7 @@
           <span id="afterCinema"></span>
         </li>
         <li class="wallAccess">
-          <a href="#wallContainer"
+          <a href="#goWall"
             ><button onclick="wallCall()">WALL OF PROJECTS</button></a
           >
           <span id="afterWall"></span>
@@ -287,7 +287,7 @@
         </ul>
       </section>
 
-      <section class="about">
+      <section class="about" id="goAbout">
         <p id="aboutText">
           <span>ABOUT</span> <br />
           <br />Du conservatoire classique à la M.A.O., j’intègre en 2009 la
@@ -326,11 +326,11 @@
 
       <section class="cinematographer" id="goCinematographer">
         <div class="cinema-container">
-          <div class="cinema-Title">
+          <div class="cinema-Title" id="et">
             <h3>Cinematographer</h3>
           </div>
-          <div class="pic-Elias"></div>
-          <div class="watch-Elias">
+          <div class="pic-Elias" id="ep"></div>
+          <div class="watch-Elias" id="ew">
             <div class="watch-infos">
               <h3 style="padding-left: 20px">Elias | by Clément Badin</h3>
               <p style="padding-left: 20px">Spain, France</p>
@@ -370,18 +370,37 @@
             </li>
           </ul>
         </div>
-        <a id="back" href="#introVideo"
-          ><button>
-            <i class="fa-solid fa-arrow-up-long fa-2xl"></i></button
-        ></a>
       </section>
 
-      <section class="wall">
-        <div id="wallContainer">
-        </div>
+      <section class="wall" id="goWall">
+        <div class="wallTitle">WALL OF MOVIES</div>
+        <div id="wallContainer"></div>
       </section>
     </section>
-    <footer></footer>
+
+    <div class="back">
+      <a id="back" href="#introVideo"
+        ><button onclick="workCall()">
+          <i class="fa-solid fa-arrow-up-long fa-2xl"></i></button
+      ></a>
+    </div>
+
+    <footer>
+      <p>© 2023 - Clément Badin</p>
+      <div class="logos">
+        <a href="https://www.imdb.com/name/nm5402494/"
+          ><img
+            src="https://res.cloudinary.com/dnxl4odrm/image/upload/v1693224275/SOundDesigner/logos/imdb_nzm31h.png"
+            alt="logo imdb"
+        /></a>
+        <a
+          href="https://www.unifrance.org/annuaires/personne/389656/clement-badin"
+          ><img
+            src="https://res.cloudinary.com/dnxl4odrm/image/upload/v1693225255/SOundDesigner/logos/logo-unifrance-2016-png-white_cdkhdc.png"
+            alt="logo unifrance"
+        /></a>
+      </div>
+    </footer>
 
     <script src="./script.js"></script>
     <!-- <script src="./essai.js"></script> -->
