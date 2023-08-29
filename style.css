@@ -873,6 +873,10 @@ figcaption p {
   background: red;
 }
 
+#back button:active {
+  background: rgb(186, 186, 237);
+}
+
 footer {
   width: 100%;
   height: 8vh;
