@@ -1,6 +1,6 @@
-## Bienvenue sur mon projet de website professionnel ! :movie_camera:
+## Bienvenue sur mon projet de website professionnel ! :clapper:
 
-### Le Projet
+### :rocket: Le Projet
 Mon idée était de créer une page professionnelle d'un artiste qui soit dynamique. 
 N'ayant jamais créer mon propre site web au cours de ma carrière dans le cinéma, il m'a paru amusant de saisir l'opportunité de ce projet, et pertinent puisque cela impliquait la manipulation d'éléments audio et vidéo.
 
@@ -31,4 +31,9 @@ Un click sur les images permet de lancer le trailer du film concerné.
 
 <br/>
 
-Le site est responsive.
+
+:bookmark: Quelques notes : 
+- Le site est responsive et adapté aux formats tablettes et téléphones
+- Il est possible d'activer le son de la vidéo d'intro du Header
+- N'hésitez pas à me faire part de toute remarque me permettant d'améliorer mon code
+- Le site est déployé par Vercel, les vidéos hébergées par Cloudinary. 
