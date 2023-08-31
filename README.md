@@ -36,7 +36,8 @@ Un click sur les images permet de lancer le trailer du film concerné.
 - Le site est responsive et adapté aux formats tablettes et téléphones
 - Il est possible d'activer le son de la vidéo d'intro du Header
 - N'hésitez pas à me faire part de toute remarque me permettant d'améliorer mon code
-- Le site est déployé par Vercel, les vidéos hébergées par Cloudinary. 
+- Le site est déployé par Vercel, les vidéos hébergées par Cloudinary.
+  (:warning: Il arrive que ce dernier hébergeur ne permette pas l'accès aux vidéos pendant de courts moments)
 
 <br/>
 <br/>
